@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ff8000">
+    <meta name="description" content="We provide excavation, landscaping, demolition, and many more services to the Calgary area.">
+    <base href="https://landmanltd.com/">
+    <link rel="author" href="humans.txt">
+    <link rel="icon" sizes="192x192" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="mask-icon" href="favicon.svg" color="orange">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>Landman</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbox">
+        <nav id="nav" class="nav main menu">
+            <object id="small-logo" data="asset/img/logo.svg" type="image/svg+xml"></object>
+            <!-- Nav Bar -->
+            <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <!-- Menu Toggle -->
+            <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+                <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <title>Toggle Menu</title>
+                    <g>
+                        <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+                        <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                        <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                        <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+                        <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                    </g>
+                </svg>
+            </a>
+            <!-- Animated background -->
+            <div class="splash"></div>
+        </nav>
+    </div>
+    <!-- Hero landing -->
+    <header class="hero">
+        <div class="hero-inner">
+            <object id="logo" data="asset/img/logo.svg" type="image/svg+xml"></object>
+        </div>
+        <section id="about" class="infobox">
+            <ul class="first-contact">
+                <li>
+                    <object class="icon person" data="asset/img/person.svg" type="image/svg+xml"></object>
+                    <h2>Sjoerd (Joe) Landman</h2>
+                </li>
+                <li>
+                    <object class="icon contact" data="asset/img/contact.svg" type="image/svg+xml"></object>
+                    <h2><a href="tel:+14033360721">1-(403)-336-0721</a></h2>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <!-- About -->
+    <main class="about">
+        <section class="infobox">Landman is a successful business from The Netherlands, now located in High River, Alberta. Landman has 30 years of experience in the construction field and provides excellent customer service before and after your project. Commitment to quality work and service to costumers are our priorities. Please call or e-mail for a free estimate.</section>
+    </main>
+    <!-- Services -->
+    <section id="services">
+        <header class="slideshow">
+            <!-- added through JS -->
+        </header>
+        <section class="service-list">
+            <section class="excavation">
+                <h3>Excavation</h3>
+            </section>
+            <section class="demolition">
+                <h3>Demolition</h3>
+            </section>
+            <section class="retaining">
+                <h3>Retaining&nbsp;Walls</h3>
+            </section>
+            <section class="screws" id="tester">
+                <h3>Ground&nbsp;Screws</h3>
+            </section>
+            <hr>
+            <section class="acreage">
+                <h3>Acreage Development</h3>
+            </section>
+            <section class="trucking">
+                <h3>Trucking</h3>
+            </section>
+            <section class="landscaping">
+                <h3>Landscaping</h3>
+            </section>
+        </section>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <header>
+            <h2>Call or e-mail for <span class="nw">a free</span> estimate</h2>
+        </header>
+        <section>
+            <dl>
+                <dt>Sjoerd (Joe) Landman</dt>
+                <dd class='tel'><a href="tel:+14033360721">1-(403)-336-0721</a></dd>
+                <dt>Office</dt>
+                <dd class='tel'><a href="tel:+15873360038">1-(587)-336-0038</a></dd>
+                <dt>E-mail</dt>
+                <dd class='email'><a href="mailto:info@landmanltd.com">info@landmanltd.com</a></dd>
+                <dt>Address</dt>
+                <dd class='location'>
+                    <p translate="no">
+                        P.O. Box 6018<br>
+                        High River, <abbr title="Alberta">AB</abbr> <span class="postal">T1V1P7</span>
+                    </p>
+                </dd>
+            </dl>
+        </section>
+    </section>
+    <!-- Footer -->
+    <footer class="pagefoot">
+        <section class="copyright">&copy; 2019 Landman <span class="nw">Reclamation Ltd.</span></section>
+        <section class="credit">Constructed by <a href="https://theoutpost.dev">The Outpost</a></section>
+    </footer>
+    <!-- Scripts -->
+    <script async src="./asset/script.js"></script>
+    <script async src="./lib/smoothscroll.min.js"></script>
+    <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

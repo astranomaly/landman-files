@@ -1,0 +1,13 @@
+/*TEAM*/
+
+Design/Development: Jon Reimer
+Site:               https://theoutpost.dev
+Twitter:            @astranomaly
+Location:           Alberta, Canada
+
+/*SITE*/
+
+Last Updated:       2019-06-06
+Standards:          HTML5, CSS3
+Components:         gulp, sass, typescript, flickity, normalize-scss, nodejs
+Software:           Visual Studio, Affinity Photo, Affinity Designer

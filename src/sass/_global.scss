@@ -1,0 +1,106 @@
+// =====================================================================
+// GLOBAL: vars, mixins, functions, placeholders
+// =====================================================================
+
+// Variables
+
+/* Color */
+$dark:   hsl(30,6,12);
+$darker: hsl(30,0,8);
+$black:  hsl(200,30,5);
+$white: hsl(30,100,95);
+$accent-color: hsl(30,100,50);
+$text-color: hsl(30,10,75);
+$text-secondary: hsl(30,100,80);
+/* Font */
+$font-stack: 'Montserrat', sans-serif;
+$default-font-size: 1.2rem;
+/* Sizes */
+$navbar-h: 5rem;
+$slideshow-h: 40vh;
+$first-contact-h: 2rem;
+$padding: 1rem;
+$page-pad: 1.5rem;
+$side-pad: 10vw;
+$media-tiny-max: 19.9rem;
+$media-small-max: 29.9rem;
+$media-medium-max: 47.9rem;
+$media-large-max: 119.9rem;
+$media-infobreak: 44.4rem;
+$max-width: 80rem;
+/* Animation */
+$transition-speed: 0.3s;
+/* Complex Designs */
+$bg-darker: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(40, 40, 40, 0.8));
+$bg-simple-darker: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) );
+$bg-cover: no-repeat center center;
+$card-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+
+
+// Reset & Global Defaults
+
+@import 'lib/normalize/import-now';
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-stack;
+    font-weight: 300;
+    color: $text-color;
+    background: $dark;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+h2{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: $accent-color;
+}
+
+h3{
+    color: $white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-shadow: 1px 1px $black;
+}
+
+dt, .copyright{
+    text-transform: uppercase;
+}
+
+abbr[title]{
+    cursor: help;
+    border-bottom: 1px dashed darken($text-color, 35%);
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: $white;
+    text-decoration: none;
+    background: rgba(255,255,255,0.1);
+
+    &:hover{
+        background: $black;
+        cursor: pointer;
+    }
+}
+
+// Helper classes
+
+span.nw{display: inline-block;} // No-wrap
